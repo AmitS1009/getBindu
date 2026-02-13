@@ -1,0 +1,36 @@
+id: interop-writer-skill
+name: Interop Writer Skill
+version: 1.0.0
+author: founding.engineer@getbindu.com
+description: LangChain-based report writer that converts research into structured markdown.
+capabilities:
+  - report_composition
+  - markdown_generation
+input_modes:
+  - application/json
+output_modes:
+  - application/json
+input_schema:
+  type: object
+  properties:
+    topic:
+      type: string
+    findings:
+      type: string
+  required:
+    - topic
+    - findings
+output_schema:
+  type: object
+  properties:
+    report_markdown:
+      type: string
+    source_research_did:
+      type: string
+  required:
+    - report_markdown
+    - source_research_did
+tags:
+  - langchain
+  - writing
+  - interoperability
