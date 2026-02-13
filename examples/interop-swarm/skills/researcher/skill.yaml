@@ -1,0 +1,16 @@
+id: interop-researcher-skill
+name: Interop Researcher Skill
+version: 1.0.0
+author: founding.engineer@getbindu.com
+description: Agno-based research capability with internet discovery and extraction.
+capabilities:
+  - web_search
+  - data_extraction
+input_modes:
+  - application/json
+output_modes:
+  - application/json
+tags:
+  - agno
+  - research
+  - interoperability
